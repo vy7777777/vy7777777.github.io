@@ -54,6 +54,12 @@ h1 em { color: var(--terracotta); font-style: italic; }
 .strip > div { display: flex; flex-direction: column; gap: 5px; padding: 20px 27px; border-right: 1px solid var(--line); font-size: 14px; }
 .strip > div:last-child { border-right: 0; }
 .strip-label { color: var(--muted); font: 10px var(--mono); letter-spacing: .12em; }
+.boundary { max-width: 1240px; margin: 0 auto; padding: 26px 27px 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.boundary-card { display: flex; gap: 18px; padding: 22px 24px; border: 1px solid var(--line); background: #ebe9e1; }
+.boundary-card.private { background: #e4ece7; border-color: #c0d0c7; }
+.boundary-mark { color: var(--terracotta); font: 11px var(--mono); letter-spacing: .08em; padding-top: 3px; }
+.boundary-card h3 { margin: 0 0 6px; font: 500 21px var(--display); }
+.boundary-card p { margin: 0; color: var(--muted); font-size: 13px; }
 .section { max-width: 1240px; margin: 0 auto; padding: 120px 27px 125px; display: grid; grid-template-columns: .65fr 1.35fr; gap: 80px; }
 h2 { margin-bottom: 0; font: 500 clamp(39px, 4vw, 60px)/1.04 var(--display); letter-spacing: -.025em; }
 h2 span { color: var(--terracotta); font-style: italic; }
@@ -82,6 +88,7 @@ footer a { color: var(--terracotta); }
   .topbar { height: 67px; } nav { gap: 16px; margin-left: 0; } nav a { font-size: 10px; } .status { font-size: 0; } .status i { margin-right: 1px; }
   .hero { display: block; min-height: auto; padding-top: 74px; padding-bottom: 77px; } h1 { font-size: clamp(46px, 13vw, 70px); } .lede { font-size: 15px; } .terminal { margin: 64px 8px 0 0; }
   .strip { display: block; } .strip > div { border-right: 0; border-bottom: 1px solid var(--line); padding: 15px 22px; } .strip > div:last-child { border-bottom: 0; }
+  .boundary { display: block; padding: 18px 22px 0; } .boundary-card { margin-bottom: 10px; padding: 18px; }
   .section { display: block; padding: 86px 22px 92px; } .section-heading { margin-bottom: 54px; } .project { grid-template-columns: 28px 1fr; gap: 12px; } .project-state { grid-column: 2; grid-row: 1; justify-self: start; margin-top: 0; }
   .notes-section { display: block; padding: 65px 22px 70px; } .notes-section h2 { margin-bottom: 45px; } .note-grid { display: block; background: transparent; } .note { min-height: 155px; border-bottom: 1px solid #ffffff26; } .note:first-child { border-top: 1px solid #ffffff26; }
   footer { flex-wrap: wrap; padding: 23px 22px; }
